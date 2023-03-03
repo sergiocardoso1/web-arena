@@ -25,6 +25,7 @@ header{
     top: 0;
     z-index: 1000;
     margin-bottom: 10px;
+    
    
 }
 
@@ -36,7 +37,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 8%;
+    padding: 10px 8%;
     background: rgb(149, 182, 3);
     box-sizing: border-box;
 }
@@ -444,7 +445,7 @@ footer{
 }
 
 footer p:nth-child(2){
-    font-size: 40px;
+    font-size: 35px;
     color: white;
     margin-bottom: 20px;
     font-weight: bold;
@@ -452,7 +453,7 @@ footer p:nth-child(2){
 
 footer p:nth-child(3){
     color: white;
-    font-size: 25px;
+    font-size: 22px;
     width: 800px;
     text-align: center;
     line-height: 26px;
@@ -463,7 +464,7 @@ footer p:nth-child(3){
 
 .enderecofooter{
     color: white;
-    font-size: 25px;
+    font-size: 22px;
     width: 800px;
     text-align: center;
     line-height: 26px;
@@ -489,7 +490,7 @@ footer p:nth-child(3){
     margin: 22px 10px;
     color: rgb(149, 182, 3);
     text-decoration: none;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .social a:hover{
@@ -500,7 +501,7 @@ footer p:nth-child(3){
 .end{
     position: absolute;
     color: white;
-    bottom: 25px;
+    bottom: 22px;
     font-size: 18px;
 
 }
@@ -679,6 +680,11 @@ footer p:nth-child(3){
     
     .end{
         font-size: 20px;
+    }
+
+    
+    header{
+        background-size: 120%;
     }
 }
 
