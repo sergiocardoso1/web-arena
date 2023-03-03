@@ -92,6 +92,7 @@ nav ul li a:hover{
 
 .section{
     background: rgb(20, 20, 20);
+    
 }
 
 .modalidade{
@@ -99,6 +100,7 @@ nav ul li a:hover{
     background: rgb(20, 20, 20);
     display: block;
     padding-bottom: 30px;
+    
 }
 
 .modalidade .texto{
@@ -682,10 +684,7 @@ footer p:nth-child(3){
         font-size: 20px;
     }
 
-    
-    header{
-        background-size: 120%;
-    }
+   
 }
 
 
