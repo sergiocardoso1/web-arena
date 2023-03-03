@@ -1,0 +1,752 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+header{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(49, 49, 49, 0.5)),url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 10px;
+   
+}
+
+.menu{
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+    background: rgb(149, 182, 3);
+    box-sizing: border-box;
+}
+
+
+.textodonav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav ul li a{
+    display: block;
+    padding: 1rem;
+    color: rgb(18, 10, 67);;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover{
+    
+    color: white;
+    transition: 0.5s;
+}
+
+.bx-menu{
+    display: none;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 30px;
+    z-index: 10001;
+    cursor: pointer;
+    margin-top: 10px;
+    padding-top: 0px;
+}
+
+.logodafrente img{
+    margin: 70px auto;
+    height: auto;
+    width: 500px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+}
+
+.section{
+    background: rgb(20, 20, 20);
+}
+
+.modalidade{
+    width: 100%;
+    background: rgb(20, 20, 20);
+    display: block;
+    padding-bottom: 30px;
+}
+
+.modalidade .texto{
+    display: block;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.modalidade .texto h2{
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    padding-top: 40px;
+    margin-bottom: 5px;
+}
+.modalidade .texto h1{
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+   
+}
+
+.card{
+    height: 550px;
+    width: 350px;
+    border-radius: 5px;
+    border:solid 1px black;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.card img{
+    height: 100%;
+}
+
+.card:hover{
+    transform: scale(1.02);
+    transition: .3s;
+}
+
+.nomefotos h1{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+
+.abaslide{
+    padding-top: 10px;
+    background-color: white;
+}
+
+.abaslide h1{
+    font-size: 40px;
+    color: black;
+    margin: 0px auto;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.fotos{
+    height: 670px;
+    width: 1080px;
+    border-radius: 7px;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 50%;
+    transform: translate(-50%, -0%);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    
+}
+
+.slide img{
+    height: 100%;
+    width: 100%;
+}
+
+.navigation{
+
+    bottom: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bar{
+    width: 15px;
+    height: 15px;
+    border: 3px solid rgb(149, 182, 3);
+    margin: 6px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.bar:hover{
+    background-color: rgb(149, 182, 3);
+    
+}
+
+input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 300%;
+    height: 100%;
+}
+
+.slide{
+    width: 33.3%;
+    transition: .6s;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -33.3%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -66.58%;
+}
+
+.service{
+    background: white;
+    width: 100%;
+    padding: 0px 0px;
+}
+
+.title2 h3{
+    color: rgb(149, 182, 3);
+    letter-spacing: 5px;
+    font-size: 75px;
+    width: 1130px;
+    max-width: 95%;
+    text-align: center;
+    margin: 0px auto;
+    margin-bottom: -30px;
+}
+
+.title2 h2{
+    color: rgb(149, 182, 3);
+    font-size: 55px;
+    width: 1130px;
+    margin: 5px auto;
+    text-align: center;
+    border-bottom: 3px solid rgb(149, 182, 3);
+    max-width: 95%;
+}
+
+.box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card2{
+    height: 330px;
+    width: 300px;
+    padding: 20px 35px;
+    background: rgb(240, 239, 239);
+    border-radius: 7px;
+    border:solid 3px black;
+    margin: 15px;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 25px;
+    
+}
+
+.card2 i{
+    font-size: 40px;
+    display: block;
+    text-align: center;
+    margin: 20px 0px;
+    color: rgb(149, 182, 3);
+}
+
+.card2 h3{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    margin-bottom: -10px;
+}
+
+.card2 h4{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.service h1{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.pra p{
+    color: rgb(149, 182, 3);
+    font-size: 30px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card2 .btncontato3{
+    color: #ffffff;
+    background: rgb(149, 182, 3);
+    padding: 4px;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 150px;
+    font-weight: bold;
+    transition: .4s;
+    padding: 9px 22px;
+}
+
+.card2 .btncontato3:hover{
+    transform: scale(1.1);
+    background-color: #182516;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.locacao{
+    background: rgb(226, 235, 181);
+    width: 100%;
+    padding: 40px;
+}
+
+.titlelocacao{
+    color: rgb(149, 182, 3);
+    font-size: 75px;
+    width: 1130px;
+    margin: 5px auto;
+    text-align: center;
+    border-bottom: 3px solid rgb(149, 182, 3);
+    max-width: 95%;
+    font-weight: bold;
+    
+}
+
+.textolocacao{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+
+}
+
+.textolocacaotxt h1{
+    background-color: white;
+    border-radius: 7px;
+    color: rgb(149, 182, 3);
+    font-size: 45px;
+    width: 530px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.textolocacaotxt p{
+    
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    width: 530px;
+    height: 140px;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.btnlocacao1{
+    color: #ffffff;
+    background: rgb(149, 182, 3);
+    padding: 4px;
+    border-radius: 7px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 200px;
+    font-weight: bold;
+}
+
+.btnlocacao2{
+    color: #ffffff;
+    background: rgb(149, 182, 3);
+    padding: 4px;
+    border-radius: 7px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 200px;
+    font-weight: bold;
+}
+
+
+.btnlocacao1:hover{
+    transform: scale(1.1);
+    background-color: #1b3a31;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.btnlocacao2:hover{
+    transform: scale(1.1);
+    background-color: #1b3a31;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(149, 182, 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p:nth-child(2){
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer p:nth-child(3){
+    color: white;
+    font-size: 25px;
+    width: 800px;
+    text-align: center;
+    line-height: 26px;
+    max-width: 95%;
+    margin-bottom: 5px;
+
+}
+
+.enderecofooter{
+    color: white;
+    font-size: 25px;
+    width: 800px;
+    text-align: center;
+    line-height: 26px;
+    max-width: 95%;
+}
+
+.enderecofooter:hover{
+    color: rgb(15, 22, 14);
+}
+    
+.social{
+    display: flex;
+}
+
+.social a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: rgb(149, 182, 3);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.social a:hover{
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+.end{
+    position: absolute;
+    color: white;
+    bottom: 25px;
+    font-size: 18px;
+
+}
+
+.end:hover{
+    color: rgb(15, 22, 14);
+}
+
+@media (max-width: 1550px) {
+    .card{
+        height: 440px;
+        width: 280px;
+    }
+}
+
+@media (max-width: 1350px) {
+
+
+    .bx-menu{
+        display: flex;
+        color: rgb(18, 10, 67);;
+    }
+
+    ul{
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        right: 0;
+        height: 80%;
+        z-index: 10000;
+        padding: 1rem 0;
+        height: 0px;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+        
+        
+    }
+
+
+    .textodonav{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        font-size: 30px;
+        background: rgb(149, 182, 3);
+        
+    
+
+    }
+
+    nav ul li a{
+        border-top: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    nav ul li a:hover{
+        background: #161d25;
+        
+    }
+
+    .menu{
+        height: 120px;
+        transition: all .55s;
+        background-color: rgb(149, 182, 3);
+    
+    }
+
+
+    .nav ul.open{
+        right: 0;
+    }
+
+    #nav.active #menu{
+        height: 40vh;
+        visibility: visible;
+    }
+
+    .logo{
+        margin-top: 20px;
+        height: 75px;
+        width: auto;
+        margin-bottom: -20px;
+    }
+
+    .bx-menu{
+        font-size: 40px;
+    }
+}
+
+
+
+@media (max-width: 1250px) {
+    .card{
+        height: 350px;
+        width: 220px;
+    }
+
+    .nomefotos h1{
+        font-size: 25px;
+        
+    }
+
+    .textolocacao{
+        display: inline-block;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    
+    }
+
+    .textolocacaotxt h1{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 10px auto;
+        
+    }
+
+    .textolocacaotxt p{
+        display: flex;
+        text-align: justify;
+        margin: 10px auto;
+        height: 100%;
+        margin-bottom: 20px;
+        
+    }
+
+
+    .btnlocacao1{
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 1150px){
+    .fotos{
+        height: 510px;
+        width: 900px;
+        
+    }
+}
+
+@media (max-width: 1050px) {
+    footer{
+        height: 400px;
+        
+    }
+    
+    footer p:nth-child(2){
+        font-size: 40px;
+    }
+    
+    footer p:nth-child(3){
+        font-size: 22px;
+        margin-bottom: 10px;
+        
+    }
+    
+    footer p:nth-child(4){
+        font-size: 25px;
+    }
+    
+    .social a{
+        width: 70px;
+        height: 70px;
+        font-size: 35px;
+    }
+    
+    .end{
+        font-size: 20px;
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+    .card{
+        height: 280px;
+        width: 180px;
+    }
+    .nomefotos h1{
+        font-size: 20px;
+        
+    }
+}
+
+@media (max-width: 950px){
+    
+    .fotos{
+        height: 450px;
+        width: 800px;
+        
+    }
+}
+
+@media (max-width: 920px){
+    .box2{
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        
+        
+    }
+    .card2{
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .textodonav{
+        font-size: 30px;
+
+    }
+
+}
+
+@media (max-width: 850px){
+    .fotos{
+        height: 400px;
+        width: 700px;
+        
+    }
+}
+
+@media (max-width: 800px) {
+    .card{
+        height: 240px;
+        width: 160px;
+    }
+    .nomefotos h1{
+        font-size: 20px;
+        
+    }
+
+}
+
+
+
+
+
+
+
