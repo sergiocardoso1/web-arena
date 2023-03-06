@@ -78,7 +78,7 @@ nav ul li a:hover{
 }
 
 .logodafrente img{
-    margin: 20vh auto;
+    margin: 15vh auto;
     height: auto;
     width: 500px;
     border-radius: 5px;
@@ -91,7 +91,7 @@ nav ul li a:hover{
 
 
 .modalidade{
-    margin-block-start: 25vh;
+    margin-block-start: 20vh;
     width: 100%;
     background: rgb(20, 20, 20);
     display: block;
