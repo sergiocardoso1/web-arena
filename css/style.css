@@ -24,7 +24,6 @@ header{
     right: 0;
     top: 0;
     z-index: 1000;
-    margin-bottom: 10px;
     
    
 }
@@ -79,7 +78,7 @@ nav ul li a:hover{
 }
 
 .logodafrente img{
-    margin: 70px auto;
+    margin: 20vh auto;
     height: auto;
     width: 500px;
     border-radius: 5px;
@@ -90,12 +89,9 @@ nav ul li a:hover{
     
 }
 
-.section{
-    background: rgb(20, 20, 20);
-    
-}
 
 .modalidade{
+    margin-block-start: 25vh;
     width: 100%;
     background: rgb(20, 20, 20);
     display: block;
