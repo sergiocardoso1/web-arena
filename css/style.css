@@ -54,7 +54,7 @@ header{
 nav ul li a{
     display: block;
     padding: 1rem;
-    color: rgb(18, 10, 67);;
+    color: rgb(18, 10, 67);
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
@@ -91,7 +91,7 @@ nav ul li a:hover{
 
 
 .modalidade{
-    margin-block-start: 20vh;
+    margin-block-start: 18vh;
     width: 100%;
     background: rgb(20, 20, 20);
     display: block;
@@ -295,7 +295,7 @@ input{
     font-size: 40px;
     display: block;
     text-align: center;
-    margin: 20px 0px;
+    margin: 17px 0px;
     color: rgb(149, 182, 3);
 }
 
