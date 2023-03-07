@@ -557,6 +557,9 @@ footer p:nth-child(3){
 
     nav ul li a{
         border-top: 1px solid #ffffff;
+    }
+
+    nav ul li:nth-child(5){
         border-bottom: 1px solid #ffffff;
     }
 
