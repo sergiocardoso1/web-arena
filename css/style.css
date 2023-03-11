@@ -508,6 +508,25 @@ footer p:nth-child(3){
     color: rgb(15, 22, 14);
 }
 
+@media (max-height: 900px) {
+    .modalidade{
+        margin-block-start: 5vh;
+    
+    }
+    
+}
+
+@media (max-height: 850px) {
+   .logodafrente img{
+        margin: 5vh auto;
+        width: 400px;
+       
+    
+    }
+    
+}
+
+
 @media (max-width: 1550px) {
     .card{
         height: 440px;
@@ -581,7 +600,7 @@ footer p:nth-child(3){
     }
 
     #nav.active #menu{
-        height: 40vh;
+        height: 80vh;
         visibility: visible;
     }
 
