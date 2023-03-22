@@ -620,8 +620,8 @@ footer p:nth-child(3){
 
  @media (max-height: 400px) {
     .logodafrente img{
-        margin-top: 5vh;
-        margin-bottom: -10vh;
+        margin-top: 7vh;
+        margin-bottom: -7vh;
         width: 200px;
         
      
@@ -629,7 +629,7 @@ footer p:nth-child(3){
      
  }
 
- @media (max-height: 350px) {
+ @media (max-height: 365px) {
     .logodafrente img{
         width: 150px;
         
@@ -640,8 +640,7 @@ footer p:nth-child(3){
 
  @media (max-height: 310px) {
     .logodafrente img{
-        width: 130px;
-        margin-bottom: -13vh;
+        width: 115px;
         
      
      }
