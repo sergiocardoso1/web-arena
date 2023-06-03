@@ -13,19 +13,9 @@ html{
     scroll-behavior: smooth;
 }
 
-
-header{
-
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(49, 49, 49, 0.5)),url("../images/background.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
-    right: 0;
-    top: 0;
-    z-index: 1000;
-    
-   
+body{
+    display: flex;
+    flex-direction: column;
 }
 
 .menu{
@@ -77,21 +67,35 @@ nav ul li a:hover{
     padding-top: 0px;
 }
 
-.logodafrente img{
-    margin: 15vh auto;
-    height: auto;
-    width: 500px;
-    border-radius: 5px;
+.background{
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(49, 49, 49, 0.5)),url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    height: 80vh;
+    margin: 0;
+   
+}
+
+.background > .logodafrente{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 33%;
+}
+
+.background > .logodafrente > img{
     
-    
+    width: 100%;
 }
 
 
 .modalidade{
-    margin-block-start: 18vh;
     width: 100%;
     background: rgb(20, 20, 20);
     display: block;
@@ -101,7 +105,7 @@ nav ul li a:hover{
 
 .modalidade .texto{
     display: block;
-    margin: 50px auto;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -220,12 +224,12 @@ input{
 
 .slides{
     display: flex;
-    width: 300%;
+    width: 700%;
     height: 100%;
 }
 
 .slide{
-    width: 33.3%;
+    width: 14.28%;
     transition: .6s;
 }
 
@@ -234,12 +238,30 @@ input{
 }
 
 #slide2:checked ~ .s1 {
-    margin-left: -33.3%;
+    margin-left: -14.285%;
 }
 
 #slide3:checked ~ .s1 {
-    margin-left: -66.58%;
+    margin-left: -28.571%;
 }
+
+#slide4:checked ~ .s1 {
+    margin-left: -42.857%;
+}
+
+#slide5:checked ~ .s1 {
+    margin-left: -57.142%;
+}
+
+#slide6:checked ~ .s1 {
+    margin-left: -71.42%;
+}
+
+#slide7:checked ~ .s1 {
+    margin-left: -85.71%;
+}
+
+
 
 .comofuncionageral h1{
     color: rgb(149, 182, 3);
@@ -580,72 +602,7 @@ footer p:nth-child(3){
     color: rgb(15, 22, 14);
 }
 
-@media (max-height: 900px) {
-    .modalidade{
-        margin-block-start: 5vh;
-    
-    }
-    
-}
 
-@media (max-height: 850px) {
-   .logodafrente img{
-        margin: 5vh auto;
-        width: 400px;
-       
-    
-    }
-    
-}
-
-@media (max-height: 650px) {
-    .logodafrente img{
-         margin: 6vh auto;
-         width: 300px;
-        
-     
-     }
-     
- }
-
- @media (max-height: 480px) {
-    .logodafrente img{
-         margin: 10vh auto;
-         width: 200px;
-        
-     
-     }
-     
- }
-
- @media (max-height: 400px) {
-    .logodafrente img{
-        margin-top: 7vh;
-        margin-bottom: -7vh;
-        width: 200px;
-        
-     
-     }
-     
- }
-
- @media (max-height: 365px) {
-    .logodafrente img{
-        width: 150px;
-        
-     
-     }
-     
- }
-
- @media (max-height: 310px) {
-    .logodafrente img{
-        width: 115px;
-        
-     
-     }
-     
- }
 
 
 @media (max-width: 1550px) {
