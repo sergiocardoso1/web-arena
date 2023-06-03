@@ -86,7 +86,7 @@ nav ul li a:hover{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    max-width: 33%;
+    max-width: 35%;
 }
 
 .background > .logodafrente > img{
