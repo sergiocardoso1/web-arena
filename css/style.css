@@ -409,7 +409,7 @@ input{
 }
 .service h1{
     color: rgb(0, 0, 0);
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 35px;
 }
 
@@ -883,19 +883,19 @@ footer p:nth-child(3){
 
 .container-formulario > .input-nome > .form-nome{
     display: flex;
-    height: 30px;
-    width: 400px;
+    height: 35px;
+    width: 500px;
     border-radius: 5px;
     border: 1px solid black;
     margin-bottom: 30px;
     padding: 5px;
-    font-size: 20px;
+    font-size: 25px;
     max-width: 99%;
     
 }
 
 .form-vezes-na-semana > .form-control-select{
-    height: 35px;
+    height: 40px;
     width: 200px;
     padding-left: 5px;
     font-size: 15px;
@@ -905,7 +905,7 @@ footer p:nth-child(3){
 }
 
 .form-plano > .form-plano-select{
-    height: 35px;
+    height: 40px;
     width: 200px;
     padding-left: 5px;
     font-size: 15px;
@@ -915,7 +915,7 @@ footer p:nth-child(3){
 }
 
 .form-servicos > .form-servicos-select{
-    height: 35px;
+    height: 40px;
     width: 200px;
     padding-left: 5px;
     font-size: 15px;
@@ -931,6 +931,7 @@ footer p:nth-child(3){
     border-radius: 7px;
     font-size: 20px;
     cursor: pointer;
+    height: 40px;
     width: 200px;
     font-weight: bold;
 

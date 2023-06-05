@@ -46,6 +46,8 @@
 
   // btn whatsapp form
 
+var numeroTelefone = "5575981616503";
+
 
 function goWhats(){
   var selectElementNome = document.getElementById("nome");
@@ -58,7 +60,6 @@ function goWhats(){
   var opcaoSelecionadaModalidade = selectElementModalidade.value;
   
     if (validarFormulario(opcaoSelecionadaNome, opcaoSelecionadaVezesSemana, opcaoSelecionadaPlano, opcaoSelecionadaModalidade) === true) {
-      var numeroTelefone = "5575981616503";
       var mensagem = "Olá, me chamo: " + opcaoSelecionadaNome + ". Tenho interesse na modalidade: " + 
       opcaoSelecionadaModalidade + ", no plano: " + opcaoSelecionadaPlano + ", " + opcaoSelecionadaVezesSemana + 
       " na semana. Desejo atendimento.";
@@ -98,4 +99,15 @@ function goWhats(){
       return true;
     }
   
+  }
+
+  function goWhatsLocacao(botao){
+
+    var valorBotao = botao.value;
+
+
+    var mensagem = "Olá, tenho interesse na locação de " + valorBotao + ". Desejo atendimento.";
+    var url = "https://api.whatsapp.com/send?phone=" + numeroTelefone + "&text=" + encodeURIComponent(mensagem);
+
+      window.open(url);
   }
