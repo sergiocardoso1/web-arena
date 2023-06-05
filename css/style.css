@@ -434,10 +434,11 @@ input{
 }
 
 .card2 .btncontato3:hover{
+    transition: 0.5s;
+    position: relative;
+    top: 1px;
     transform: scale(1.1);
     background-color: #182516;
-    color: #fff;
-    transition: 0.5s;
 }
 
 .locacao{
@@ -509,17 +510,19 @@ input{
 
 
 .btnlocacao1:hover{
-    transform: scale(1.1);
-    background-color: #1b3a31;
-    color: #fff;
     transition: 0.5s;
+    position: relative;
+    top: 1px;
+    transform: scale(1.1);
+    background-color: #182516;
 }
 
 .btnlocacao2:hover{
-    transform: scale(1.1);
-    background-color: #1b3a31;
-    color: #fff;
     transition: 0.5s;
+    position: relative;
+    top: 1px;
+    transform: scale(1.1);
+    background-color: #182516;
 }
 
 
@@ -922,25 +925,28 @@ footer p:nth-child(3){
 }
 
 .btn-enviar > .button{
-    height: 35px;
+    color: #ffffff;
+    background: rgb(149, 182, 3);
+    padding: 4px;
+    border-radius: 7px;
+    font-size: 20px;
+    cursor: pointer;
     width: 200px;
-    font-size: 15px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid black;
+    font-weight: bold;
 
 }
 
 .btn-enviar > .button:hover{
-    transition: .1s;
-    background-color: rgb(213, 238, 156);
+    transition: 0.5s;
     position: relative;
     top: 1px;
+    transform: scale(1.1);
+    background-color: #182516;
 }
 
 .btn-enviar > .button:active{
     
-    background-color: rgb(213, 238, 156);
+    background-color: #182516;
     position: relative;
     top: 1px;
 }
