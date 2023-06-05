@@ -43,3 +43,59 @@
   btnMenu5.addEventListener('click',function(){
     nav.classList.toggle('active');
   });
+
+  // btn whatsapp form
+
+
+function goWhats(){
+  var selectElementNome = document.getElementById("nome");
+  var opcaoSelecionadaNome = selectElementNome.value;
+  var selectElementVezesSemana = document.getElementById("select-vezes-semana");
+  var opcaoSelecionadaVezesSemana = selectElementVezesSemana.value;
+  var selectElementPlano = document.getElementById("select-plano");
+  var opcaoSelecionadaPlano = selectElementPlano.value;
+  var selectElementModalidade = document.getElementById("select-modalidade");
+  var opcaoSelecionadaModalidade = selectElementModalidade.value;
+  
+    if (validarFormulario(opcaoSelecionadaNome, opcaoSelecionadaVezesSemana, opcaoSelecionadaPlano, opcaoSelecionadaModalidade) === true) {
+      var numeroTelefone = "5575981616503";
+      var mensagem = "Olá, me chamo: " + opcaoSelecionadaNome + ". Tenho interesse na modalidade: " + 
+      opcaoSelecionadaModalidade + ", no plano: " + opcaoSelecionadaPlano + ", " + opcaoSelecionadaVezesSemana + 
+      " na semana. Desejo atendimento.";
+
+      var url = "https://api.whatsapp.com/send?phone=" + numeroTelefone + "&text=" + encodeURIComponent(mensagem);
+
+      window.open(url);
+    } else{
+      alert("O campo não pode ficar vazio.");
+    }
+  }
+
+  function validarFormulario(nome, vezesSemana, plano, modalidade ) {
+    
+  
+    if (nome === "") {
+      
+      return false; // Impede o envio do formulário
+    }
+
+    else if (vezesSemana === "") {
+      
+      return false; // Impede o envio do formulário
+    }
+
+    else if (plano === "") {
+      
+      return false; // Impede o envio do formulário
+    }
+
+    else if (modalidade === "") {
+      
+      return false; // Impede o envio do formulário
+    }
+
+    else{
+      return true;
+    }
+  
+  }

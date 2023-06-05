@@ -856,6 +856,96 @@ footer p:nth-child(3){
 
 }
 
+.container-formulario{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.container-formulario > h2{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 1130px;
+    max-width: 95%;
+    border-bottom: 3px solid rgb(149, 182, 3);
+    margin-top: 10px;
+    color:  rgb(149, 182, 3);;
+    
+}
+
+.container-formulario > .input-nome > .form-nome{
+    display: flex;
+    height: 30px;
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+    padding: 5px;
+    font-size: 20px;
+    max-width: 99%;
+    
+}
+
+.form-vezes-na-semana > .form-control-select{
+    height: 35px;
+    width: 200px;
+    padding-left: 5px;
+    font-size: 15px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.form-plano > .form-plano-select{
+    height: 35px;
+    width: 200px;
+    padding-left: 5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.form-servicos > .form-servicos-select{
+    height: 35px;
+    width: 200px;
+    padding-left: 5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.btn-enviar > .button{
+    height: 35px;
+    width: 200px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+
+}
+
+.btn-enviar > .button:hover{
+    transition: .1s;
+    background-color: rgb(213, 238, 156);
+    position: relative;
+    top: 1px;
+}
+
+.btn-enviar > .button:active{
+    
+    background-color: rgb(213, 238, 156);
+    position: relative;
+    top: 1px;
+}
+
+
 
 
 
